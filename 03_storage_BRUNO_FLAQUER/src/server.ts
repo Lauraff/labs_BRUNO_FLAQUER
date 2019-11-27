@@ -22,7 +22,7 @@ app.get('/', (req: any, res: any) => {
 app.get(
     '/hello/:name', 
     (req, res) => res.render('hello.ejs', {name: req.params.name})
-  )
+)
 
 const dbMet: MetricsHandler = new MetricsHandler('./db/metrics')
 

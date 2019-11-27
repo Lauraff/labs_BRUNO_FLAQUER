@@ -14,7 +14,7 @@ command to run the project (in the folder):
 npm run dev
 
 If you go to the url adress: 
-http://localhost:8080 our application will be displayed.
+http://localhost:8080 you can see the explanation of how this application works: if you pass /hello followed by a name in parameters it will display "Hello name", as well as a button "bring the metrics" that, when clicked, will display all timestamps present on the levelDB database.
 
 To test the use of the levelDB database, you can use "Postman".
 
