@@ -35,6 +35,7 @@ export class Metric {
         let timestamp: string = data.key.split(':')[2]
         let metric: Metric = new Metric(timestamp, data.value)
         metrics.push(metric)
+        console.log(data.key)
       })
       .on('error', function (err) {
         console.log('Oh my!', err)
