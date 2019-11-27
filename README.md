@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains all of our labs. Each one of them is in a seperate folder named with the number and name of the lab as well as our last names.
+This repository contains all of our labs. Each one of them is in a seperate folder named as follows: "labNumber_labName_lastName1_lastName2".
 
 ## List of contributors
 
