@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The objective of this lab is to discover the storage of data by using leveDB as well as how to test our code with postman.
+The objective of this lab is to discover the storage of data by using levelDB as well as how to test our code with postman.
 
 ## Installation instructions
 
