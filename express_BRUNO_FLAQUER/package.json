@@ -1,0 +1,21 @@
+{
+  "name": "lab_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.7.2",
+    "jquery": "^3.4.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
