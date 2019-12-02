@@ -1,7 +1,7 @@
 {
   "name": "lab_typescript",
   "version": "1.0.0",
-  "main": "handles.js",
+  "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register src/**/*.test.ts",
     "build": "./node_modules/.bin/tsc -p tsconfig.json",
@@ -23,10 +23,14 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "del": "^5.1.0",
     "ejs": "^2.7.2",
     "encoding-down": "^6.3.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "jquery": "^3.4.1",
+    "level": "^6.0.0",
+    "level-session-store": "^2.2.0",
     "level-ws": "^2.0.0",
     "leveldown": "^5.4.1",
     "levelup": "^4.3.2",

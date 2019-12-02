@@ -18,14 +18,17 @@ export class Metric {
       this.db = LevelDB.open(dbPath)
     }
 
+    public closeDB(){
+      this.db.close()
+    }
     public save(key: number, metrics: Metric[], callback: (error: Error | null) => void) {
       const stream = WriteStream(this.db)
       stream.on('error', callback)
       stream.on('close', callback)
+      
       metrics.forEach((m: Metric) => {
         stream.write({ key: `metrics:${key}:${m.timestamp}`, value: m.value })
       })
-      stream.end()
     }
 
     static get(callback: (error: Error | null, result?: Metric[]) => void) {
@@ -78,7 +81,6 @@ export class Metric {
       })
       .on('close', function () {
         console.log('Stream closed')
-        
       })
       .on('end', function () {
         callback(null,metrics)
