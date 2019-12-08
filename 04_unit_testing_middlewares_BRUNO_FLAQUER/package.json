@@ -1,7 +1,7 @@
 {
   "name": "lab_typescript",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "handles.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register src/**/*.test.ts",
     "build": "./node_modules/.bin/tsc -p tsconfig.json",
@@ -34,6 +34,7 @@
     "level-ws": "^2.0.0",
     "leveldown": "^5.4.1",
     "levelup": "^4.3.2",
+    "morgan": "^1.9.1",
     "nodemon": "^1.19.4",
     "ts-node": "^8.5.2"
   }

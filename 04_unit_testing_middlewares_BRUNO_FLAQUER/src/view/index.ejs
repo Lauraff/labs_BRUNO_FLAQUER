@@ -9,13 +9,15 @@
       <button class="btn btn-success" id="show-metrics">
         Bring the metrics
       </button>
-      <div id="metrics"></div>
-      </div>
-      <button class="btn btn-danger" href="/logout" onClick='document.location.href="/logout"'>
-        Logout
+      <button class="btn btn-success" href="/addMetric" onClick='document.location.href="/addMetric"'>
+        Add a metric
       </button>
-    </body>
-    <script>
+      <button class="btn btn-success" href="/deleteMetric" onClick='document.location.href="/deleteMetric"'>
+        Delete a metric
+      </button>
+      <div id="metrics"></div>
+      </div> 
+      <script>
         $('#show-metrics').click((e) => {
             e.preventDefault();
             $.getJSON("/metrics/", {}, (data) => {
@@ -26,4 +28,11 @@
             });
         })
     </script>
+    <button class="btn btn-danger" href="/logout" onClick='document.location.href="/logout"'>
+      Logout
+    </button>
+    <button class="btn btn-danger" href="/delete" onClick='document.location.href="/delete"'>
+      Delete
+    </button>
+    </body>
 </html>
